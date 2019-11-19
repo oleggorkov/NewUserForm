@@ -1,0 +1,254 @@
+*
+  box-sizing: border-box
+  margin: 0
+  padding: 0
+
+body
+  font-family: 'Work Sans', sans-serif
+  font-style: normal
+  font-weight: 400
+  font-size: 14px
+  line-height: 16px
+  color: #111111
+
+.container
+  margin: 0 auto
+
+
+input
+  margin: 0
+  padding: 0
+
+.signup
+  width: 800px
+  height: 600px
+  background: #F4F5FC
+  display: flex
+  align-items: center
+  justify-content: center
+
+.signup-block
+  display: flex
+  width: 665px
+  height: 480px
+
+.signup-block_name
+  background: #5A61ED
+  height: 100%
+  width: 137px
+
+.signup-block_form
+  width: 528px
+  height: 100%
+  background: #FFFFFF url("../img/background.svg") no-repeat right bottom
+
+.signup-heading
+  position: absolute
+  font-family: 'PT Sans', sans-serif
+  font-style: normal
+  font-weight: normal
+  font-size: 49px
+  line-height: 63px
+  letter-spacing: 0.5px
+  color: #FFFFFF
+  margin: 0
+  transform: rotate(-90deg) translate(-206%, 24%)
+
+.form-wrapper
+  padding: 5% 3% 5% 4%
+
+.form-heading
+  font-weight: 500
+  font-size: 22px
+  line-height: 26px
+  letter-spacing: -0.46px
+
+.form-text
+  font-weight: 300
+  line-height: 16px
+  margin-bottom: 20px
+
+.form-block
+  display: flex
+  flex-wrap: wrap
+  margin-bottom: 108px
+
+.form-item
+  display: flex
+  flex-direction: column
+  margin-bottom: 16px
+
+.form-item:nth-child(2n+1)
+  margin-right: 15px
+
+.form-item_label
+  font-weight: 300
+  font-size: 12px
+  line-height: 14px
+  color: #7C7C7C
+  margin-bottom: 5px
+
+.form-item_input
+  outline: none
+  border: none
+  border-bottom: 1px solid #F2F2F2
+  width: 234.5px
+  height: 21px
+  padding-right: 10px
+  background: transparent
+
+.signup-block_login
+  display: flex
+  justify-content: space-between
+  align-items: center
+
+.block-login
+  font-weight: 300
+  font-size: 13px
+  line-height: 15px
+  color: #000000
+
+.block-login_btn
+  color: #5A61ED
+
+.block-login_btn:hover
+  color: #111111
+
+.complete-button
+  display: block
+  width: 154px
+  height: 32px
+  background: #5A61ED
+  border: 0.5px solid #FFFFFF
+  font-family: 'PT Sans' , sans-serif
+  font-style: normal
+  font-weight: normal
+  font-size: 14px
+  color: #FFFFFF
+  text-align: center
+  line-height: 32px
+  text-decoration: none
+  transition: all 0.5s
+
+.complete-button:hover
+  color: #5A61ED
+  background: #FFFFFF
+  border: 0.5px solid #5A61ED
+
+.email-check
+  color: #5A61ED
+  position: absolute
+  top: 20px
+  left: 223px
+
+.email
+  position: relative
+
+input::-webkit-calendar-picker-indicator
+  opacity: 1
+  display: none
+
+.national
+  position: relative
+
+.national-check
+  position: absolute
+  top: 22px
+  left: 223px
+  width: 10px
+  height: 10px
+
+.radio-block
+  display: flex
+
+.radiobutton
+  width: 12px
+  display: none
+  position: relative
+
+.radio-block_item
+  margin-right: 19px
+
+.radiobutton-style
+  display: inline-block
+  width: 12px
+  height: 12px
+  border: 0.7px solid #5A61ED
+  border-radius: 50%
+  position: relative
+  top: 1px
+
+.radiobutton-style::before
+  content: ''
+  position: absolute
+  display: block
+  top: 50%
+  left: 50%
+  width: 6px
+  height: 6px
+  background: #5A61ED
+  border-radius: 50%
+  transform: translate(-50%, -50%)
+  opacity: 0
+  transition: 0.5s
+
+.radiobutton:checked + .radiobutton-style::before
+  opacity: 1
+
+.radio-block_item
+  vertical-align: middle
+
+.form-item_input--birth
+  display: flex
+
+.birth-input
+  outline: none
+  border: none
+  border-bottom: 1px solid #F2F2F2
+
+.date
+  width: 56px
+  margin-right: 10px
+
+.month
+  width: 91px
+  margin-right: 10px
+
+.year
+  width: 67px
+
+.date-check
+  position: absolute
+  width: 10px
+  height: 10px
+  top: 4px
+  left: 45px
+
+.birth-input-block
+  position: relative
+
+.month-check
+  position: absolute
+  top: 4px
+  width: 10px
+  height: 10px
+  left: 81px
+
+.year-check
+  position: absolute
+  top: 4px
+  width: 10px
+  height: 10px
+  left: 56px
+
+
+
+
+
+
+
+
+
+
+
+

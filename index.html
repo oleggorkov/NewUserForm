@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>NewUser</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans|Work+Sans:300,400,500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="signup container">
+        <div class="signup-block">
+            <div class="signup-block_name">
+                <h1 class="signup-heading">Sign Up</h1>
+            </div>
+            <div class="signup-block_form">
+                <div class="form-wrapper">
+                    <h3 class="form-heading">New User?</h3>
+                    <p class="form-text">Use the form below to create your account.</p>
+                    <form action="#" class="form-block">
+                        <div class="form-item">
+                            <label class="form-item_label" for="name">First Name</label>
+                            <input type="text" id="name" class="form-item_input">
+                        </div>
+                        <div class="form-item">
+                            <label class="form-item_label" for="surname">Last Name</label>
+                            <input type="text" id="surname" class="form-item_input">
+                        </div>
+                        <div class="form-item national">
+                            <label class="form-item_label" for="nationality">Nationality</label>
+                            <input type="text" id="nationality" class="form-item_input" list="national-list">
+                            <img src="img/chevron-down-solid.svg" alt="chevron" class="national-check">
+                            <datalist class="form-item_datalist" id="national-list">
+                                <option label="American" value="American"></option>
+                                <option label="Russian" value="Russian"></option>
+                            </datalist>
+                        </div>
+                        <div class="form-item email">
+                            <label class="form-item_label" for="email">E-mail</label>
+                            <input type="email" id="email" pattern="\S+@[a-z]+.[a-z]+" class="form-item_input">
+                            <img class="email-check" src="img/check.svg" alt="check">
+                        </div>
+                        <div class="form-item">
+                            <label class="form-item_label">Date of Birth</label>
+                            <div class="form-item_input--birth">
+                            <div class="birth-input-block">
+                            <input class="birth-input date" type="text" list="date-list" placeholder="1">
+                            <img src="img/chevron-down-solid.svg" alt="chevron" class="date-check">
+                            <datalist class="form-item_datalist" id="date-list">
+                                <option label="1" value="1"></option>
+                                <option label="2" value="2"></option>
+                                <option label="3" value="3"></option>
+                            </datalist>
+                            </div>
+                            <div class="birth-input-block">
+                                <input  class="birth-input month" type="text" list="month-list" placeholder="January">
+                                <img src="img/chevron-down-solid.svg" alt="chevron" class="month-check">
+                                <datalist class="form-item_datalist" id="month-list">
+                                    <option label="January" value="January"></option>
+                                    <option label="February" value="February"></option>
+                                    <option label="March" value="March"></option>
+                                </datalist>
+                            </div>
+                            <div class="birth-input-block">
+                                <input class="birth-input year" type="text"  list="year-list" placeholder="1950">
+                                <img src="img/chevron-down-solid.svg" alt="chevron" class="year-check">
+                                <datalist class="form-item_datalist" id="year-list">
+                                    <option label="1950" value="1950"></option>
+                                    <option label="1951" value="1951"></option>
+                                    <option label="1952" value="1952"></option>
+                                </datalist>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="form-item">
+                            <label class="form-item_label">Gender</label>
+                            <div class="radio-block">
+                                <label class="radio-block_item">
+                                <input type="radio" class="radiobutton" name="gender">
+                                    <span class="radiobutton-style"></span>
+                                    <span class="radiobutton-text">Male</span>
+                                </label>
+                                <label>
+                            <input type="radio" class="radiobutton" name="gender">
+                                    <span class="radiobutton-style"></span>
+                                    <span class="radiobutton-text">Female</span>
+                                </label>
+                            </div>
+                            </div>
+                        <div class="form-item">
+                            <label class="form-item_label" for="password">Password</label>
+                            <input type="text" id="password" class="form-item_input">
+                        </div>
+                        <div class="form-item">
+                            <label class="form-item_label" for="apply">Confirm Password</label>
+                            <input type="text" id="apply" class="form-item_input">
+                        </div>
+                    </form>
+                    <div class="signup-block_login">
+                        <div class="block-login">
+                            Have an account?
+                            <a href="#" class="block-login_btn">Login</a>
+                        </div>
+                        <a href="#" class="complete-button">Complete Signup</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
